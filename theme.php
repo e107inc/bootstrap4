@@ -62,6 +62,7 @@ class bootstrap4_theme
 // IMPORTANT: make sure there are no characters after <<<TMPL or TMPL;
 
 // DEFAULT
+/*
 $LAYOUT = array();
 
 // TODO Add navigation
@@ -1542,6 +1543,6 @@ $LAYOUT['test'] = <<<TMPL
    {---}
    </div>
 TMPL;
-
+*/
 
 
