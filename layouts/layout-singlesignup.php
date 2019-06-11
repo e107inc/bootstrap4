@@ -1,6 +1,7 @@
 <?php 
  
-/* by default it is set true, cancel it, it's fixed with custom headers,  with true, it ignores the rest of layouts */
+// https://startbootstrap.com/snippets/sign-in-split/
+/* by default it is set true,  with true it ignores the rest of layouts */
 /* in case this layout is used for login page */ 
 define('e_IFRAME','0');   
 

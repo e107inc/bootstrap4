@@ -2,7 +2,7 @@
 
 //https://github.com/BlackrockDigital/startbootstrap-shop-item
 
-$LAYOUT['rightsidebar'] =  '   
+$LAYOUT['leftsidebar'] =  '   
 {SETSTYLE=default}
 <!-- Page Content -->
 <div class="container">
