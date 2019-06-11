@@ -22,9 +22,11 @@
 	</stylesheets>
 	<layouts>
 		<layout name='default' title='Default'  default='true' />
-		<layout name='home' title='Home' />
+		<layout name='home' title='Home Page' />
 		<layout name='full' title='Full' />
-		<layout name='test' title='Test'  />
-		<layout name='glyphs' title='Glyphs (test)' />
+		<layout name='sidebar_left' title='Sidebar (left)' />
+		<layout name='sidebar_right' title='Sidebar (right)' />
+		<layout name='singlelogin' title='Login'  />
+		<layout name='singlesignup' title='Signup' />
 	</layouts>
 </e107Theme>
