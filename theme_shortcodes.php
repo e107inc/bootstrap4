@@ -14,6 +14,9 @@
 class theme_shortcodes extends e_shortcode
 {
 
+
+
+
 	function sc_bread()
 	{
 		// temporary solution to breadcrumbs
