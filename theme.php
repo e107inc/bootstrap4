@@ -14,13 +14,12 @@ e107::css("url", "https://bootswatch.com/4/slate/bootstrap.min.css" );
 class bootstrap4_theme
 {
 
-	function tablestyle($caption, $text, $mode, $options)
+	function tablestyle($caption, $text, $mode, $options=array())
 	{
 
 	    $style = varset($options['setStyle'], 'default');
 
 		echo "\n<!-- tablestyle:  style=". $style."  mode=".$mode."  UniqueId=".varset($options['uniqueId'])." -->\n\n";
-
 
 		if($mode == 'wmessage')
 		{
@@ -44,6 +43,24 @@ class bootstrap4_theme
 	            echo $caption;
 				echo $text;
 			break;*/
+
+		    case 'section':
+			    echo  '
+				<section class="py-5 bg-image-full" style="background-image: url(https://unsplash.it/1900/1080?image=1081);">
+		            <div class="container" style="height: 250px;"><h2 class="text-center">'.$caption.'</h2></div>
+		            
+		        </section>';
+
+		        echo '<div class="container">
+						<div class="card bg-light">
+			                <div class="card-header">'.$caption.'</div>
+			                <div class="card-body">
+			                 <div class="card-text">'.$text.'</div>
+			                </div>
+		                </div>
+		              </div>';
+
+		    break;
 
 			default:
 

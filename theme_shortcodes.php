@@ -13,6 +13,17 @@
 
 class theme_shortcodes extends e_shortcode
 {
+
+	function sc_bread()
+	{
+		// temporary solution to breadcrumbs
+		return "<a href='#'>Blog</a>";
+
+
+	}
+
+
+
 	function sc_theme_bs4_glyphs()
 	{
 
