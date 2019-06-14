@@ -38,25 +38,24 @@ $CONTACT_TEMPLATE['info'] = "
 
 $CONTACT_TEMPLATE['menu'] =  '
 	<div class="contactMenuForm">
-		<div class="control-group form-group">
+		<div class="control-group form-group"><div class="controls">
 			<label for="contactName">'.LANCONTACT_03.'</label>
 				{CONTACT_NAME}
-		 </div>
-		 
-		<div class="control-group form-group">
+		 </div></div>
+		<div class="control-group form-group"><div class="controls">
 			<label class="control-label" for="contactEmail">'.LANCONTACT_04.'</label>
 				{CONTACT_EMAIL}
-		</div>
-		<div class="control-group form-group">
+		</div></div>
+		<div class="control-group form-group"><div class="controls">
 			<label for="contactBody" >'.LANCONTACT_06.'</label>
 				{CONTACT_BODY=rows=5&cols=30}
-		</div>
-		<div class="form-group"><label for="gdpr">'.LANCONTACT_24.'</label>
+		</div></div>
+		<div class="control-group form-group"><div class="controls"><label for="gdpr">'.LANCONTACT_24.'</label>
 			<div class="checkbox">
 				<label>{CONTACT_GDPR_CHECK} '.LANCONTACT_21.'</label>
 				<div class="help-block">{CONTACT_GDPR_LINK}</div> 
 			</div>
-		</div>
+		</div></div>
 		{CONTACT_SUBMIT_BUTTON}
 	</div>       
  ';
@@ -84,21 +83,21 @@ $CONTACT_TEMPLATE['menu'] =  '
 	<form action='".e_SELF."' method='post' id='contactForm' >
 
 	{CONTACT_PERSON}
-	<div class='control-group form-group'><label for='contactName'>".LANCONTACT_03."</label>
+	<div class='control-group form-group'><div class='controls'><label for='contactName'>".LANCONTACT_03."</label>
 		{CONTACT_NAME}
-	</div>
-	<div class='control-group form-group'><label for='contactEmail'>".LANCONTACT_04."</label>
+	</div></div>
+	<div class='control-group form-group'><div class='controls'><label for='contactEmail'>".LANCONTACT_04."</label>
 		{CONTACT_EMAIL}
-	</div>
-	<div class='control-group form-group'><label for='contactSubject'>".LANCONTACT_05."</label>
+	</div></div>
+	<div class='control-group form-group'><div class='controls'><label for='contactSubject'>".LANCONTACT_05."</label>
 		{CONTACT_SUBJECT}
-	</div>
+	</div></div>
 
 		{CONTACT_EMAIL_COPY}
 
-	<div class='control-group form-group'><label for='contactBody'>".LANCONTACT_06."</label>
+	<div class='control-group form-group'><div class='controls'><label for='contactBody'>".LANCONTACT_06."</label>
 		{CONTACT_BODY}
-	</div>
+	</div></div>
 
 	{CONTACT_IMAGECODE}
 	{CONTACT_IMAGECODE_INPUT}
@@ -121,7 +120,46 @@ $CONTACT_TEMPLATE['menu'] =  '
 	// Customize the email subject
 	// Variables:  CONTACT_SUBJECT and CONTACT_PERSON as well as any custom fields set in the form. )
 	$CONTACT_TEMPLATE['email']['subject'] = "{CONTACT_SUBJECT}";
+	
+	
+	//see theme preferences
+	$CONTACT_TEMPLATE['map'] = e107::pref('theme', 'contact_map');
+	
+	/* prepared for $CONTACT_TEMPLATE['layout'] */
+  /* caption has to be here because there is 2x tablerender and h1 would be there 2x */
+  /* LANs are not loaded in layout files */
+  
+  $CONTACT_TEMPLATE['layout']  =  
+  '<div class="container"> 
+    <h1 class="mt-4 mb-3">'.PAGE_NAME.'</h1> 
+    <!-- Content Row -->
+     <div class="row">
+       <!-- Map Column -->
+       <div class="col-lg-8 mb-4"> '
+			   .$CONTACT_TEMPLATE['map'].'
+       </div>
+      <!-- Contact Details Column -->
+      <div class="col-lg-4 mb-4">
+			   <h3>'.LANCONTACT_01.'</h3> ' 
+         .$CONTACT_TEMPLATE['info'].
+			'</div>
+    </div>
+    <!-- /.row -->
 
+    <!-- Contact Form -->
+    <div class="row">
+      <div class="col-lg-8 mb-4">
+			<h3>'.LANCONTACT_02.'</h3>' 
+			.$CONTACT_TEMPLATE['form'].
+	'   </div>
+    </div> 
+		<!-- /.row -->
+  </div>
+	<!-- /.container -->';
+	
+	/* use this for 2.2.1 */
+  $CONTACT_TEMPLATE['info'] = '';
+	$CONTACT_TEMPLATE['form'] = $CONTACT_TEMPLATE['layout'];	
 	
 
 ?>

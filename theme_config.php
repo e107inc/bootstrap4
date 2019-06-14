@@ -1,37 +1,40 @@
 <?php
 
-if (!defined('e107_INIT')) { exit; }
+if (!defined('e107_INIT')) { exit; }    
 
-//e107::lan('theme', 'admin',true);
+e107::themeLan('admin','bootstrap4', true);
 
-// Theme Configuration File.
+// Dummy Theme Configuration File.
 class theme_config implements e_theme_config
 {
 
-	function config($type='front')
+	function __construct()
 	{
-
-
+		
 	}
 
+
+	function config()
+	{
+		// v2.1.4 format.
+
+		$fields = array(
+			'contact_map'  	=> array('title' => LAN_THEMEPREF_03, 'type'=>'textarea', 'writeParms'=>array('size'=>'block-level'),'help'=>''),			 
+		);
+
+		return $fields;
+
+	}
 
 	function help()
 	{
-
+	 	return '';
 	}
-}
-
-/*
-// Custom Methods
-class theme_config_form extends e_form
-{
-
-	function custom_method($value,$mode,$parms) // named the same as $fields key.(eg. 'branding') Used when type = 'method'
+	
+	function process()
 	{
-
-		return $this->text('custom_method', $value);
-
+	 	return '';
 	}
-
 }
-*/
+
+?>
