@@ -37,4 +37,3 @@ class theme_config implements e_theme_config
 	}
 }
 
-?>
