@@ -13,22 +13,22 @@ $FAQS_TEMPLATE['start']	= "
 {FAQ_SUBMIT_QUESTION_LIST}
 ";
 
-$FAQS_TEMPLATE['end']	= "
+
+$FAQS_TEMPLATE['end']	= " </div>
 	<div class='faq-submit-question'></div>
-</div>
 ";
 
 $FAQS_TEMPLATE['all']['start'] = "
-<div>
-	<h2 class='faq-listall'>{FAQ_CATEGORY=extend}</h2>
-	<ul class='faq-listall'>
+
+	<h2 class='faq-listall'>{FAQ_CATEGORY=extend} </h2>
+	<div class='mb-4' id='accordion{FAQ_CATEGORY_ID}' role='tablist' aria-multiselectable='true'>
+ 
 ";
 $FAQS_TEMPLATE['all']['item'] = "
-		<li class='faq-listall'>{FAQ_QUESTION=expand|tags=1|share=1}</li>
-";
+		 {FAQ_QUESTION=accordion|tags=1|share=1}";
+		 
 $FAQS_TEMPLATE['all']['end'] = "
-	</ul>
-</div>
+</div></div>
 ";
 
 $FAQS_TEMPLATE['caption'] = "{FAQ_CAPTION} <small>{FAQ_COUNT}</small>";
