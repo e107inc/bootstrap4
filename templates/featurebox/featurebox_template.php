@@ -11,16 +11,14 @@ global $sc_style;
 
 // e107 v2.x Defaults. 
 
-$FEATUREBOX_TEMPLATE['bootstrap_carousel_default'] = '{SETIMAGE: w=2205&h=510&crop=1}
-		<div class="{FEATUREBOX_ACTIVE} item slide{FEATUREBOX_COUNTER}">
-			{FEATUREBOX_IMAGE}		
-           <div class="container">
-            <div class="carousel-caption">
-              <h1>{FEATUREBOX_TITLE}</h1>
-              <p>{FEATUREBOX_TEXT}</p>
-            </div>
+$FEATUREBOX_TEMPLATE['bootstrap_carousel_default'] = '{SETIMAGE: w=1900&h=1080&crop=1}
+        <div class="carousel-item {FEATUREBOX_ACTIVE}" style="background-image: url(\'{FEATUREBOX_IMAGE=src}\')"   > 
+          <div class="carousel-caption d-none d-md-block">   
+            <h3>{FEATUREBOX_TITLE}</h3>
+            <p>{FEATUREBOX_TEXT}</p>
           </div>
-        </div>';
+        </div>
+         ';
 
 
 $FEATUREBOX_TEMPLATE['bootstrap_carousel_left'] = '
