@@ -117,7 +117,7 @@ $NEWS_TEMPLATE['default']['item'] = '
 
 $NEWS_WRAPPER['default']['item']['NEWSIMAGE: item=1'] = '<span class="news-images-main pull-left col-xs-12 col-sm-6 col-md-6">{---}</span>';
 
-$NEWS_TEMPLATE['default']['caption'] = null; // add a value to user tablerender()
+$NEWS_TEMPLATE['default']['caption'] = ''; // add a value to user tablerender()
 $NEWS_TEMPLATE['default']['start']	= '<!-- Default News Template -->';
 $NEWS_TEMPLATE['default']['item'] = '
 		{SETIMAGE: w=400&h=400}
