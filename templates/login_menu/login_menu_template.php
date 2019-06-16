@@ -169,37 +169,37 @@ if ( ! isset($LOGIN_MENU_LOGGED))
 
 // New Template for v2. Bullets via CSS etc. Login-Menu Stats may require work. 
 
-    $sc_style['LM_MAINTENANCE']['pre'] = '<li class="login-menu-maintenance">';
+    $sc_style['LM_MAINTENANCE']['pre'] = '<li class="login-menu-maintenance list-group-item">';
 	$sc_style['LM_MAINTENANCE']['post'] = '</li>';
 
-    $sc_style['LM_ADMINLINK']['pre'] = '<li class="login-menu-admin">';
+    $sc_style['LM_ADMINLINK']['pre'] = '<li class="login-menu-admin list-group-item">';
 	$sc_style['LM_ADMINLINK']['post'] = '</li>';
 
-    $sc_style['LM_EXTERNAL_LINKS']['pre'] = '<li class="login-menu-external">';
+    $sc_style['LM_EXTERNAL_LINKS']['pre'] = '<li class="login-menu-external list-group-item">';
 	$sc_style['LM_EXTERNAL_LINKS']['post'] = '</li>';
 
-    $sc_style['LM_STATS']['pre'] = '<li class="nav-header login-menu-stats smalltext">'.LAN_LOGINMENU_25.':</li><li>';
+    $sc_style['LM_STATS']['pre'] = '<li class="nav-header login-menu-stats smalltext list-group-item">'.LAN_LOGINMENU_25.':</li><li>';
 	$sc_style['LM_STATS']['post'] = '</li>';
 
-    $sc_style['LM_LISTNEW_LINK']['pre'] = '<li class="login-menu-listnew">';
+    $sc_style['LM_LISTNEW_LINK']['pre'] = '<li class="login-menu-listnew list-group-item">';
 	$sc_style['LM_LISTNEW_LINK']['post'] = '</li>';
 
-    $sc_style['LM_ADMIN_CONFIGURE']['pre'] = '<li class="login-menu-admin-config">';
+    $sc_style['LM_ADMIN_CONFIGURE']['pre'] = '<li class="login-menu-admin-config list-group-item">';
 	$sc_style['LM_ADMIN_CONFIGURE']['post'] = '</li>';
 	
-    $sc_style['LM_LOGOUT']['pre'] = '<li class="login-menu-logout">';
+    $sc_style['LM_LOGOUT']['pre'] = '<li class="login-menu-logout list-group-item">';
 	$sc_style['LM_LOGOUT']['post'] = '</li>';
 	
-    $sc_style['LM_LOGOUT']['pre'] = '<li class="login-menu-logout">';
+    $sc_style['LM_LOGOUT']['pre'] = '<li class="login-menu-logout list-group-item">';
 	$sc_style['LM_LOGOUT']['post'] = '</li>';
 
 	
 	$LOGIN_MENU_LOGGED = '
-	<ul class="login-menu-logged nav nav-list">
+	<ul class="login-menu-logged nav nav-list list-group list-group-flush">
 		{LM_MAINTENANCE}
 		{LM_ADMINLINK}
-		<li class="login-menu-usersettings {LM_ACTIVE: mode=usersettings}">{LM_USERSETTINGS}</li>
-		<li class="login-menu-profile {LM_ACTIVE: mode=profile}">{LM_PROFILE}</li>
+		<li class="login-menu-usersettings list-group-item {LM_ACTIVE: mode=usersettings}">{LM_USERSETTINGS}</li>
+		<li class="login-menu-profile  list-group-item {LM_ACTIVE: mode=profile}">{LM_PROFILE}</li>
 		{LM_ADMIN_CONFIGURE}
 		{LM_EXTERNAL_LINKS}
 		{LM_LOGOUT}

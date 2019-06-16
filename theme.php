@@ -21,12 +21,24 @@ class bootstrap4_theme
 
 	    $style = varset($options['setStyle'], 'default');
 
-		echo "\n<!-- tablestyle:  style=". $style."  mode=".$mode."  UniqueId=".varset($options['uniqueId'])." -->\n\n";
 
 		if($mode == 'wmessage')
 		{
 			$style = '';
 		}
+
+		if($style === 'cardmenu' && !empty($options['list']))
+		{
+			$style = 'cardlist';
+		}
+
+		echo "\n<!-- tablestyle:  style=". $style."  mode=".$mode."  UniqueId=".varset($options['uniqueId'])." -->\n\n";
+
+		echo "\n<!-- \n";
+
+		echo json_encode($options, JSON_PRETTY_PRINT);
+
+		echo "\n-->\n\n";
 
 	    switch($style)
 	    {
@@ -45,12 +57,15 @@ class bootstrap4_theme
 	            echo $caption;
 				echo $text;
 			break;
-
-		    case 'section':
-
+  */
+		    case 'cardlist':
+					echo '<div class="card bg-light">
+	                <div class="card-header">'.$caption.'</div>'
+	                . $text .'
+	              </div>';
 
 		    break;
-		    */
+
 
 			default:
 
