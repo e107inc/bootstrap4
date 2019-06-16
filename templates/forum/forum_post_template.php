@@ -15,9 +15,7 @@ if (!defined('e107_INIT')) { exit; }
 //$FORUM_POST_TEMPLATE['caption']		= "{FORUM_POST_CAPTION}";
 $FORUM_POST_TEMPLATE['form']		= "
 									{FORUM_POST_FORM_START}
-									<div class='row-fluid'>
-										<div>{FORUM_POST_BREADCRUMB}</div>
-									</div>
+									
 
 									<div class='form-group'>
 										<label for='name' class='col-sm-3 control-label'>".LAN_FORUM_3010."</label>

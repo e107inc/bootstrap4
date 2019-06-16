@@ -11,10 +11,10 @@
  * Template for Book and Chapter Listings, as well as navigation on those pages. 
  */
 
-
+$CHAPTER_TEMPLATE = array();
  
 $CHAPTER_TEMPLATE['default']['listPages']['caption']				= "{CHAPTER_NAME}";
-$CHAPTER_TEMPLATE['default']['listPages']['start'] 					= "{CHAPTER_BREADCRUMB}<ul class='page-pages-list'>";
+$CHAPTER_TEMPLATE['default']['listPages']['start'] 					= "<ul class='page-pages-list'>";
 $CHAPTER_TEMPLATE['default']['listPages']['item'] 					= "<li><a href='{CPAGEURL}'>{CPAGETITLE}</a></li>";
 $CHAPTER_TEMPLATE['default']['listPages']['end'] 					= "</ul>";	
 
@@ -119,14 +119,14 @@ $CHAPTER_TEMPLATE['panel']['listChapters']['end']				= "</div>";
 
 
 $CHAPTER_TEMPLATE['panel']['listPages']['caption']				= "{CHAPTER_NAME}";
-$CHAPTER_TEMPLATE['panel']['listPages']['start'] 				= "<!-- Chapter Template: Panel listPages -->{CHAPTER_BREADCRUMB}<div class='chapter-pages-list'>";
+$CHAPTER_TEMPLATE['panel']['listPages']['start'] 				= "<!-- Chapter Template: Panel listPages --><div class='chapter-pages-list'>";
 $CHAPTER_TEMPLATE['panel']['listPages']['item'] 				= "<div class='section'><div class='row'>{CPAGEMENU}</div></div>";
 $CHAPTER_TEMPLATE['panel']['listPages']['end'] 					= "</div>";	
 
 
 
 $CHAPTER_TEMPLATE['grid']['listPages']['caption']				= "{CHAPTER_NAME}";
-$CHAPTER_TEMPLATE['grid']['listPages']['start']				    = "<!-- Chapter Template: Grid listPages -->{SETIMAGE: w=450}{CHAPTER_BREADCRUMB}<div class='chapter-pages-list'><div class='row'>";
+$CHAPTER_TEMPLATE['grid']['listPages']['start']				    = "<!-- Chapter Template: Grid listPages -->{SETIMAGE: w=450}<div class='chapter-pages-list'><div class='row'>";
 $CHAPTER_TEMPLATE['grid']['listPages']['item']				    = "<div class='col-xs-12 col-md-4 text-center'>{CPAGEMENU}</div>";
 $CHAPTER_TEMPLATE['grid']['listPages']['end']				    = "</div></div>";
 

@@ -100,7 +100,7 @@ $FORUM_TRACK_END	= "<br />TRACK-END";
 // New in v2.x - requires a bootstrap theme be loaded.  
 
 
-$FORUM_TEMPLATE['main']['start']			= "{FORUM_BREADCRUMB}
+$FORUM_TEMPLATE['main']['start']			= "
 											<div class=''>
 
 												<div class='form-group right'>
@@ -144,7 +144,7 @@ $FORUM_TEMPLATE['main']['end']				= "</table><div class='forum-footer center'><s
 // $FORUM_WRAPPER['main']['forum']['USERINFOX'] = "{FORUM_BREADCRUMB}(html before){---}(html after)";
 
 // Tracking
-$FORUM_TEMPLATE['track']['start']       = "{FORUM_BREADCRUMB}<div id='forum-track'>
+$FORUM_TEMPLATE['track']['start']       = "<div id='forum-track'>
 											<table class='table table-striped table-bordered table-hover'>
 											<colgroup>
 											<col style='width:5%' />

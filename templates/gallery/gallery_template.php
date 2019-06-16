@@ -9,9 +9,12 @@
  * Templates for "gallery" plugin.
  */
 
+
+$GALLERY_TEMPLATE = array();
+
 $GALLERY_TEMPLATE['list']['caption'] = LAN_PLUGIN_GALLERY_TITLE;
 
-$GALLERY_TEMPLATE['list']['start'] = '{GALLERY_BREADCRUMB}
+$GALLERY_TEMPLATE['list']['start'] = '
 <div class="row gallery">
 ';
 
@@ -37,7 +40,7 @@ $GALLERY_TEMPLATE['list']['end'] = '
 // Bootstrap3 Compatible.
 $GALLERY_TEMPLATE['cat']['caption'] = LAN_PLUGIN_GALLERY_TITLE;
 
-$GALLERY_TEMPLATE['cat']['start'] = '{GALLERY_BREADCRUMB}
+$GALLERY_TEMPLATE['cat']['start'] = '
 <div class="row gallery-cat">
 ';
 
