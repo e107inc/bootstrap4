@@ -20,6 +20,9 @@
 		<css file="style.css" name="Default"/>
            <css file="*" name="*"/>
 	</stylesheets>
+	<screenshots>
+		<image>preview_frontend.png</image>
+	</screenshots>
 	<layouts>
 		<layout name='default' title='Default'  default='true' />
 		<layout name='homepage' title='Home Page' >
