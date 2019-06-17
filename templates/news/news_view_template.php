@@ -76,7 +76,7 @@ $NEWS_VIEW_TEMPLATE['default']['item'] = '
 		<hr>
 		
 		<div class="options hidden-print ">
-			<div class="btn-group">{NEWSCOMMENTLINK: glyph=comments&class=btn btn-default}{PRINTICON: class=btn btn-default}{ADMINOPTIONS: class=btn btn-default}{SOCIALSHARE}</div>
+			<div class="btn-group">{NEWSCOMMENTLINK: glyph=comments}{PRINTICON}{ADMINOPTIONS}{SOCIALSHARE}</div>
 		</div>
 
 	</div>
