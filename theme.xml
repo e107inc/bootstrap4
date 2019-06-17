@@ -22,11 +22,27 @@
 	</stylesheets>
 	<layouts>
 		<layout name='default' title='Default'  default='true' />
-		<layout name='home' title='Home Page' />
-		<layout name='full' title='Full' />
+		<layout name='homepage' title='Home Page' >
+			<custompages>FRONTPAGE</custompages>
+		</layout>
+			<layout name='full' title='Full' >
+			<custompages>forum/ download/</custompages>
+		</layout>
 		<layout name='sidebar_left' title='Sidebar (left)' />
-		<layout name='sidebar_right' title='Sidebar (right)' />
-		<layout name='singlelogin' title='Login'  />
-		<layout name='singlesignup' title='Signup' />
+		<layout name='sidebar_right' title='Blog template' >
+			<custompages>news</custompages>
+		</layout>
+		<layout name='singlelogin' title='Login Screen with Floating Labels' >
+			<custompages>login fpw</custompages>
+		</layout>
+			<layout name='singlesignup' title='Sign in page with a split screen format' >
+			<custompages>signup</custompages>
+		</layout>
+		<layout name='singlecontact' title='Contact page' >
+			<custompages>contact</custompages>
+		</layout>
+		<layout name='bare' title='Starter Bare template for development' >
+			<custompages>guide</custompages>
+		</layout>
 	</layouts>
 </e107Theme>
