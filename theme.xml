@@ -24,7 +24,6 @@
 		<image>preview_frontend.png</image>
 	</screenshots>
 	<layouts>
-		<layout name='default' title='Default'   />
 		<layout name='homepage' title='Home Page' >
 			<custompages>FRONTPAGE</custompages>
 		</layout>
@@ -32,7 +31,7 @@
 			<custompages>forum/ download/</custompages>
 		</layout>
 		<layout name='sidebar_left' title='Sidebar (left)' />
-		<layout name='sidebar_right' title='Blog template' default='true' />
+		<layout name='sidebar_right' title='Sidebar (right)' default='true' />
 		<layout name='singlelogin' title='Login Screen with Floating Labels' >
 			<custompages>login fpw</custompages>
 		</layout>
