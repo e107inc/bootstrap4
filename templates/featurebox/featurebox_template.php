@@ -23,7 +23,7 @@ $FEATUREBOX_TEMPLATE['bootstrap_carousel_default'] = '{SETIMAGE: w=1900&h=1080&c
 
 $FEATUREBOX_TEMPLATE['bootstrap_carousel_left'] = '
    <!-- slide -->			 {SETIMAGE: w=600&h=450&crop=1}
-                            <div class="{FEATUREBOX_ACTIVE} item slide{FEATUREBOX_COUNTER}">
+                            <div class="{FEATUREBOX_ACTIVE} carousel-item item slide{FEATUREBOX_COUNTER}">
                                 <div class="container">
                                     <div class="featurebox-item-image col-xs-12 col-md-6 col-sm-6 pull-left ">
                                     	{FEATUREBOX_IMAGE=placeholder}
@@ -45,7 +45,7 @@ $FEATUREBOX_TEMPLATE['bootstrap_carousel_left'] = '
 
 $FEATUREBOX_TEMPLATE['bootstrap_carousel_right'] = '
 							{SETIMAGE: w=600&h=450&crop=1}
- 							<div class="{FEATUREBOX_ACTIVE} item slide{FEATUREBOX_COUNTER}">
+ 							<div class="{FEATUREBOX_ACTIVE} carousel-item item slide{FEATUREBOX_COUNTER}">
                                 <div class="container">
                                  <div class="featurebox-item-image pull-right col-xs-12 col-sm-6 col-md-6 span6">
                                          {FEATUREBOX_IMAGE=placeholder}
@@ -64,7 +64,7 @@ $FEATUREBOX_TEMPLATE['bootstrap_carousel_right'] = '
 
 $FEATUREBOX_TEMPLATE['bootstrap_carousel_image'] = '{SETIMAGE: w=1905&h=500&crop=1}
 
-									<div class="{FEATUREBOX_ACTIVE} item slide{FEATUREBOX_COUNTER}">			
+									<div class="{FEATUREBOX_ACTIVE} carousel-item item slide{FEATUREBOX_COUNTER}">			
 									{FEATUREBOX_IMAGE=placeholder}		
 									</div>
 ';
