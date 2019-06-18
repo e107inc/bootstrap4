@@ -24,7 +24,7 @@
 		<image>preview_frontend.png</image>
 	</screenshots>
 	<layouts>
-		<layout name='homepage' title='Home Page' >
+		<layout name='home' title='Home Page' >
 			<custompages>FRONTPAGE</custompages>
 		</layout>
 			<layout name='full' title='Full' >
