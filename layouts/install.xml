@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<e107Export version="2.2.2 (git)" timestamp="1560933412" >
+	<database>
+	<dbTable name="menus">
+		<item>
+			<field name="menu_id">1</field>
+			<field name="menu_name">featurebox_menu</field>
+			<field name="menu_location">1</field>
+			<field name="menu_order">1</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">featurebox/</field>
+			<field name="menu_layout">home</field>
+			<field name="menu_parms"></field>
+		</item>
+	</dbTable>
+	</database>
+</e107Export>

@@ -162,13 +162,13 @@ $FEATUREBOX_INFO = array(
 	'bootstrap_carousel_left' 		=> array('title' => 'Bootstrap Carousel (Image-left)', 		'description' => 'Image aligned left with title and text on the right'),
 	'bootstrap_carousel_right' 		=> array('title' => 'Bootstrap Carousel (Image-right)', 	'description' => 'Image aligned right with title and text on the left'),
 	
-	'default' 						=> array('title' => 'Generic', 								'description' => 'Title and description - no image'),
-	'image_left'					=> array('title' => 'Generic - (Image-left)'	, 			'description' => 'Left floated image'),
-	'image_right' 					=> array('title' => 'Generic - (Image-right)',				'description' => 'Right floated image'),
+	'default' 						=> array('title' => '---', 								'description' => 'Title and description - no image'),
+	'image_left'					=> array('title' => '---'	, 			'description' => 'Left floated image'),
+	'image_right' 					=> array('title' => '---',				'description' => 'Right floated image'),
 
 	// 'camera'						=> array('title' => 'Camera item',							'description' => 'For use with the "camera" category'),
 	// 'camera_caption' 				=> array('title' => 'Camera item with caption',				'description' => 'For use with the "camera" category'),
-	'accordion' 					=> array('title' => 'Accordion Item',						'description' => 'For use with accordion'),
-	'tabs' 							=> array('title' => 'Tab Item',								'description' => 'For use with tabs')
+	'accordion' 					=> array('title' => '---',						'description' => 'For use with accordion'),
+	'tabs' 							=> array('title' => '---',								'description' => 'For use with tabs')
 );
 ?>
