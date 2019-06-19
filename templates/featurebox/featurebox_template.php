@@ -20,45 +20,43 @@ $FEATUREBOX_TEMPLATE['bootstrap_carousel_default'] = '{SETIMAGE: w=1900&h=1080&c
         </div>
          ';
 
-
+// you can't use h1 in featurebox, h1 can be there only one time
 $FEATUREBOX_TEMPLATE['bootstrap_carousel_left'] = '
-   <!-- slide -->			 {SETIMAGE: w=600&h=450&crop=1}
-                            <div class="{FEATUREBOX_ACTIVE} carousel-item item slide{FEATUREBOX_COUNTER}">
-                                <div class="container">
-                                    <div class="featurebox-item-image col-xs-12 col-md-6 col-sm-6 pull-left ">
-                                    	{FEATUREBOX_IMAGE=placeholder}
-                                     </div>
-                                    <div class="featurebox-item-text col-xs-12 col-md-6 col-sm-6 span4">
-                                        <h1>
-                                            {FEATUREBOX_TITLE}
-                                        </h1>
-                                        {FEATUREBOX_TEXT}
-										
-										 <p>{FEATUREBOX_BUTTON}</p>
-										
-                                    </div>
-                                </div>
-                            </div>
-   <!-- -->
-   
+   <!-- slide -->			 
+{SETIMAGE: w=600&h=450&crop=1}                             
+<div class="{FEATUREBOX_ACTIVE} carousel-item item slide{FEATUREBOX_COUNTER} ">                                
+	<div class="container">   																 
+		<div class="row">                                    
+			<div class="featurebox-item-image col-xs-12 col-md-6 col-sm-6 pull-left my-auto">                                    	
+			{FEATUREBOX_IMAGE=placeholder}                                      
+			</div>                                    
+			<div class="featurebox-item-text col-xs-12 col-md-6 col-sm-6 my-auto">                                        
+				<h3>{FEATUREBOX_TITLE}</h3>                                        
+				<p>{FEATUREBOX_TEXT}</p> 										 										 
+				{FEATUREBOX_BUTTON}									                   
+			</div>                                    
+		</div>                                
+	</div>                            
+</div>   
+<!-- -->
 ';
 
 $FEATUREBOX_TEMPLATE['bootstrap_carousel_right'] = '
-							{SETIMAGE: w=600&h=450&crop=1}
- 							<div class="{FEATUREBOX_ACTIVE} carousel-item item slide{FEATUREBOX_COUNTER}">
-                                <div class="container">
-                                 <div class="featurebox-item-image pull-right col-xs-12 col-sm-6 col-md-6 span6">
-                                         {FEATUREBOX_IMAGE=placeholder}
-                                    </div>
-                                    <div class="featurebox-item-text col-xs-12 col-md-6 col-sm-6">
-                                        <h1>{FEATUREBOX_TITLE}</h1>
-                                        {FEATUREBOX_TEXT}
-										
-                                        <p>{FEATUREBOX_BUTTON}</p>
-										
-                                    </div>
-                                </div>
-                            </div>
+{SETIMAGE: w=600&h=450&crop=1}  							
+<div class="{FEATUREBOX_ACTIVE} carousel-item item slide{FEATUREBOX_COUNTER} my-auto">                                
+	<div class="container">   																 
+		<div class="row">                                 
+			<div class="featurebox-item-image float-right col-xs-12 col-sm-6 col-md-6 my-auto">                                         
+			{FEATUREBOX_IMAGE=placeholder}                                     
+			</div>                                    
+			<div class="featurebox-item-text float-left col-xs-12 col-md-6 col-sm-6 my-auto">                                        
+				<h3>{FEATUREBOX_TITLE}</h3>                                        
+				<p>{FEATUREBOX_TEXT}</p> 										                                         
+				{FEATUREBOX_BUTTON}									                                     
+			</div>																	
+		</div>                                
+	</div>                            
+</div>
 ';
 
 
