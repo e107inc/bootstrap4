@@ -26,10 +26,10 @@ $NEWS_MENU_TEMPLATE['category']['item']        = '
 
 
 // months menu
-$NEWS_MENU_TEMPLATE['months']['start']       = '<ul class="news-menu-months list-group list-group-flush">';
+$NEWS_MENU_TEMPLATE['months']['start']       = '<ul class="nav flex-column news-menu-months">';
 $NEWS_MENU_TEMPLATE['months']['end']         = '</ul>';
 $NEWS_MENU_TEMPLATE['months']['item']        = '
-	<li class="list-group-item"><a class="e-menu-link newsmonths{active}" href="{url}">{month} <span class="badge badge-primary">{count}</span></a></li>
+	<li class="nav-item"><a class="nav-link e-menu-link newsmonths{active}" href="{url}">{month} <span class="badge badge-primary">{count}</span></a></li>
 ';
 //$NEWS_MENU_TEMPLATE['months']['separator']   = '<br />';
 
