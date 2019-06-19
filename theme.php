@@ -7,7 +7,7 @@ if ( ! defined('e107_INIT')) { exit(); }
 e107::meta('viewport', 'width=device-width, initial-scale=1.0');
 //e107::meta('apple-mobile-web-app-capable','yes');
 
-//e107::css("url", "https://bootswatch.com/4/slate/bootstrap.min.css" );
+ e107::css("url", "https://bootswatch.com/4/slate/bootstrap.min.css" );
 
 
 $inlinecss = e107::pref('theme', 'inlinecss', FALSE);
@@ -49,11 +49,23 @@ class bootstrap4_theme
 		{
 			$style = '';
 		}
-
-		if($style === 'cardmenu' && !empty($options['list']))
+		
+		if($mode == 'cpage')
 		{
-			$style = 'cardlist';
+			$caption = '';
 		}
+
+		if($style === 'listgroup' &&  empty($options['list']))
+		{
+			$style = 'cardmenu';
+		}
+		
+		
+		/* Changing card look via prefs */
+	  if(!e107::pref('theme', 'cardmenu_look')) {
+	    if($style == 'cardmenu')  { $style = 'menu'; }
+	  }
+  
 
 		echo "\n<!-- tablestyle:  style=". $style."  mode=".$mode."  UniqueId=".varset($options['uniqueId'])." -->\n\n";
 
@@ -88,8 +100,38 @@ class bootstrap4_theme
   			case 'singlecontact':
 				  echo  $text; ;
 					break;
+				case 'menu':	 
+			    echo '<div class=" mb-4">';
+				    if(!empty($caption))
+				    {
+				      echo '<h5 >'.$caption.'</h5>';
+				    }
+			    echo $text;	
+			    echo '</div>';
+			    break;				
+			  case 'cardmenu':
+					  echo '<div class="card mb-4">';
+					    if(!empty($caption))
+					    {
+					      echo '<h5 class="card-header">'.$caption.'</h5>';
+					    }
+				    echo '<div class="card-body">';
+				    echo $text;	
+				    echo '</div>
+						</div>';
+				 break;
+			    
  
-			
+			  case 'listgroup':
+				  echo '<div class="card mb-4">';
+			    if(!empty($caption))
+			    {
+			      echo '<h5 class="card-header">'.$caption.'</h5>';
+			    }
+			    echo $text;	
+			    echo '</div>';
+			    break;		  
+			  
 		    case 'cardlist':
 					echo '<div class="card bg-light">
 	                <div class="card-header">'.$caption.'</div>'
@@ -101,13 +143,15 @@ class bootstrap4_theme
 
 			default:
 
-			echo '<div class="card bg-light">
-	                <div class="card-header">'.$caption.'</div>
-	                <div class="card-body">
-	                 <div class="card-text">'.$text.'</div>
-	                </div>
-	              </div>';
-			break;
+		  // default style
+		  // only if this always work, play with different styles
+		  
+		  if(!empty($caption))
+			{
+				echo '<div class="my-4">'.$caption.'</div>';
+			}
+			echo $text;	
+		  return;
 		}
 
 	}
