@@ -31,6 +31,11 @@ $NEWS_MENU_TEMPLATE['months']['end']         = '</ul>';
 $NEWS_MENU_TEMPLATE['months']['item']        = '
 	<li class="nav-item"><a class="nav-link e-menu-link newsmonths{active}" href="{url}">{month} <span class="badge badge-primary">{count}</span></a></li>
 ';
+
+// sends value to tablestyle = $info['footer'];
+$NEWS_MENU_TEMPLATE['months']['footer']   = '<div class="e-menu-link news-menu-archive" ><a class="btn btn-default btn-secondary btn-sm btn-block" href="{e_PLUGIN}blogcalendar_menu/archive.php">{LAN=BLOGCAL_L2}</a></div>';;
+
+
 //$NEWS_MENU_TEMPLATE['months']['separator']   = '<br />';
 
  
