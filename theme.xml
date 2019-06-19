@@ -45,4 +45,10 @@
 			<custompages>guide</custompages>
 		</layout>
 	</layouts>
+	<themePrefs>
+		<pref name='map'>Insert your own iframe code for google maps</pref>
+		<pref name='cardmenu_look'>1</pref>
+		<pref name='inlinecss'></pref>
+		<pref name='inlinejs'></pref>
+	</themePrefs>
 </e107Theme>
