@@ -123,7 +123,7 @@ $CONTACT_TEMPLATE['menu'] =  '
 	
 	
 	//see theme preferences
-	$CONTACT_TEMPLATE['map'] = e107::pref('theme', 'contact_map');
+	$CONTACT_TEMPLATE['map'] = e107::pref('theme', 'map');
 	
 	/* prepared for $CONTACT_TEMPLATE['layout'] */
   /* caption has to be here because there is 2x tablerender and h1 would be there 2x */
