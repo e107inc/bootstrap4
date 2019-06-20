@@ -33,3 +33,16 @@ ul.social-buttons li a {
     outline: 0;
     background-color: #212529;
 }
+
+
+/* fix for comment avatar */
+
+.rounded-circle img.rounded {
+    border-radius: 50%!important;
+}
+
+@media (min-width: 768px) {
+    .offset1 {
+        margin-left: 8.33333%;
+    }
+}

@@ -96,53 +96,32 @@ $sc_style['MODERATE']['pre']	= '<div class="span12" style="padding:10px">';
 $sc_style['MODERATE']['post']	= '</div>';
 
 
-$COMMENT_TEMPLATE['form']			= "
-	{SETIMAGE: w=90&h=90&crop=1}
-	<div class='media comment-box comment-box-form clearfix'>
-		<div class='comment-box-left media-object pull-left' >
-		{COMMENT_AVATAR}
-		</div>
-		<div class='media-body comment-box-right text-left' >
-			<div class='P10'>
-				{AUTHOR_INPUT}
-				{COMMENT_INPUT}
-			<div id='commentformbutton'>
-				{COMMENT_BUTTON}
-				{COMMENT_SHARE}
-			</div>
-			</div>
-		</div>
+$COMMENT_TEMPLATE['form']			=  '
+	<!-- Comments Form -->
+	<div class="card my-4">
+	  <h5 class="card-header">Leave a Comment:</h5>
+	  <div class="card-body"> 
+		  <div class="form-group">
+		  {AUTHOR_INPUT}
+		  {COMMENT_INPUT}
+		  </div>
+		  {COMMENT_BUTTON} 
+	  </div>
+	</div>'; 
+
+
+
+$COMMENT_TEMPLATE['item'] = '{SETIMAGE: w=90&h=90&crop=1}
+<div class="media mt-4">
+	<div class="d-flex mr-3 rounded-circle" >{COMMENT_AVATAR}</div>
+	<div class="media-body">
+	<h5 class="mt-0">{USERNAME}</h5>{TIMEDATE=relative}
+	<div id="{COMMENT_ITEMID}-edit" contentEditable="false" >
+	{COMMENT}
 	</div>
-	<div class='clear_b'><!-- --></div>
-	<hr>"; 
-
-
-
-$COMMENT_TEMPLATE['item'] = '
-		{SETIMAGE: w=90&h=90&crop=1}
-		<div class="media-object comment-box-left pull-left span1">
-			{COMMENT_AVATAR}
-		</div>	
-		<div class="media-body comment-box-right ">
-			<div class="row">
-				
-					<div class="comment-box-username span2 col-xs-6 col-sm-6 col-md-6">{USERNAME}</div>
-					<div class="comment-box-date span2 col-xs-6 col-sm-6  col-md-6 text-right text-muted">{TIMEDATE=relative}</div>
-
-			</div>
-			
-			<div class="row-fluid">
-				<div class="span12 col-xs-12 comment-text" id="{COMMENT_ITEMID}-edit" contentEditable="false" >
-					<p>
-						{COMMENT}
-					</p>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="comment-status span2 col-sm-12 col-md-6">{COMMENT_STATUS}</div>
-					<div class="comment-moderate span6 col-sm-12 col-md-6 text-right">{COMMENT_RATE} {REPLY} {COMMENTEDIT} {COMMENT_MODERATE}</div>
-			</div>
-		</div>
+	{COMMENT_STATUS}{COMMENT_RATE} {REPLY} {COMMENTEDIT} {COMMENT_MODERATE}
+ 
+</div>
 	';
 	
 
