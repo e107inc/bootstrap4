@@ -124,6 +124,7 @@ $NEWS_TEMPLATE['default']['item'] = '
 
 $NEWS_TEMPLATE['default']['end']	= '';
 
+$NEWS_WRAPPER['category'] =   $NEWS_WRAPPER['list'];
 $NEWS_TEMPLATE['category']          = $NEWS_TEMPLATE['list'];
 $NEWS_TEMPLATE['category']['start']	= '<!-- Category News Template -->';
 
