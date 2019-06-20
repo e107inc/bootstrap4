@@ -51,6 +51,9 @@
 		{
 
 			$style = varset($options['setStyle'], 'default');
+			
+			//this should be displayed only in e_debug mode
+      echo "\n<!-- tablestyle initial:  style=" . $style . "  mode=" . $mode . "  UniqueId=" . varset($options['uniqueId']) . " -->\n\n";
 
 
 			if($mode == 'wmessage')
@@ -68,7 +71,12 @@
 				$style = 'cardmenu';
 			}
 
-
+ 
+			if($style === 'cardmenu' && $options['list'] == 1 )
+			{
+				$style = 'listgroup';
+			}
+			
 			/* Changing card look via prefs */
 			if(!e107::pref('theme', 'cardmenu_look') && $style == 'cardmenu')
 			{
