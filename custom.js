@@ -5,6 +5,19 @@ $(document).ready(function() {
       	 $(this).addClass('fas');
   	} ); 
   	
+  	//should be fixed in core
+    $('.forum-viewtopic').find('ul.dropdown-menu li').each(function() {
+  	 $(this).addClass('dropdown-item');
+  	} ); 
+    
+    $('.forum-viewtopic').find('ul.dropdown-menu').each(function() {
+  	 $(this).addClass('dropdown-menu-right');
+  	} );     
+    
+    $('#forum-viewforum').find('ul.dropdown-menu').each(function() {
+  	 $(this).addClass('dropdown-menu-right');
+  	} );  
+  	
   	
     // hide #back-top first
     $("#back-top").hide();
