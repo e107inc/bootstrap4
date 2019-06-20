@@ -6,6 +6,11 @@ body {
   padding-top: 56px;
 }
 
+.s-message.fade {
+opacity: 1 !important;
+visibility: inherit;
+} 
+
 
 #e107bootstrapcarousel .carousel-item {
   height: 65vh;
