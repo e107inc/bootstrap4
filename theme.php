@@ -60,12 +60,8 @@
 			{
 				$style = '';
 			}
-
-			if(THEME_LAYOUT == 'sidebar_right')
-			{
-				$style = 'nocaption';
-			}
-
+ 
+			
 			if($style === 'listgroup' && empty($options['list']))
 			{
 				$style = 'cardmenu';
@@ -116,6 +112,7 @@
 
 
 				case 'nocaption':
+				case 'main':
 					echo $text;;
 					break;
 
