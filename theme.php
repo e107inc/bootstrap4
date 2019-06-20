@@ -61,9 +61,9 @@
 				$style = '';
 			}
 
-			if($mode == 'cpage')
+			if(THEME_LAYOUT == 'sidebar_right')
 			{
-				$caption = '';
+				$style = 'nocaption';
 			}
 
 			if($style === 'listgroup' && empty($options['list']))
@@ -115,7 +115,7 @@
 					break;
 
 
-				case 'singlecontact':
+				case 'nocaption':
 					echo $text;;
 					break;
 
