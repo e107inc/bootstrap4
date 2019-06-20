@@ -48,23 +48,23 @@ $NEWS_MENU_TEMPLATE['latest']['item']        = '<li class="list-group-item"><a c
  <span class="badge badge-primary">{NEWSCOMMENTCOUNT}</span></a></li>';
 
 // TODO
-$NEWS_MENU_TEMPLATE['archive']['start']       = '<ul class="news-archive-menu list-group list-group-flush">';
+$NEWS_MENU_TEMPLATE['archive']['start']       = '<ul class="news-archive-menu list-group list-group-flush ">';
 $NEWS_MENU_TEMPLATE['archive']['end']         = '</ul>';
 
 $NEWS_MENU_TEMPLATE['archive']['year_start']        = "<li class='list-group-item'>
 <a class='e-expandit {EXPANDOPEN}' href='#{YEAR_ID}'>{YEAR_NAME}</a>
-<ul id='{YEAR_ID}' class='news-archive-menu-months list-group list-group-flush' style='display:{YEAR_DISPLAY}'>
+<ul id='{YEAR_ID}' class='news-archive-menu-months nav flex-column' style='display:{YEAR_DISPLAY}'>
 ";
 $NEWS_MENU_TEMPLATE['archive']['year_end']        = '</ul></li>';
 
-$NEWS_MENU_TEMPLATE['archive']['month_start']        = "<li class='list-group-item'>
- <a class='e-expandit' href='#{MONTH_ID}'>{MONTH_NAME}</a>
- <ul id='{MONTH_ID}' class='news-archive-menu-items list-group list-group-flush' style='display:none'>
+$NEWS_MENU_TEMPLATE['archive']['month_start']        = "<li class='nav-item'>
+ <a class='nav-link e-expandit' href='#{MONTH_ID}'>{MONTH_NAME}</a>
+ <ul id='{MONTH_ID}' class='news-archive-menu-items nav flex-column' style='display:none'>
  ";
 $NEWS_MENU_TEMPLATE['archive']['month_end']        = '</ul></li>';
 
 $NEWS_MENU_TEMPLATE['archive']['item']        = "
-	<li class='list-group-item' ><a href='{ITEM_URL}'>{ITEM_TITLE}</a></li>
+	<li class='nav-link' ><a class='nav-link' href='{ITEM_URL}'>{ITEM_TITLE}</a></li>
 ";
 
 
