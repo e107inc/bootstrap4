@@ -136,7 +136,7 @@
 					break;
 
 
-				case 'listgroup': //FIXME almost identical to 'cardlist'
+				case 'listgroup': 
 					echo '<div class="card mb-4">';
 					if(!empty($caption))
 					{
@@ -155,24 +155,7 @@
 					echo '</div>';
 					break;
 
-
-				case 'cardlist':
-					echo '<div class="card bg-light">
-	                <div class="card-header">' . $caption . '</div>'
-						. $text . '
-	             	</div>';
-
-					if(!empty($options['footer'])) // XXX @see news-months menu.
-			        {
-			            echo '<div class="card-footer">
-		                      '.$options['footer'].'
-		                    </div>';
-			        }
-
-					break;
-
-
-				default:
+			   default:
 
 					// default style
 					// only if this always work, play with different styles
