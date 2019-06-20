@@ -40,7 +40,7 @@ $NAVIGATION_TEMPLATE['main']['item_submenu'] = '
 
 // Main Link which has a sub menu - active state.
 $NAVIGATION_TEMPLATE['main']['item_submenu_active'] = '
-	<li class="nav-item dropdown active>
+	<li class="nav-item dropdown active">
 		<a class="nav-link dropdown-toggle"  id="navbarDropdown{LINK_PARENT}"  role="button" data-toggle="dropdown" data-target="#" href="{LINK_URL}" title="{LINK_DESCRIPTION}">
 		 {LINK_ICON}{LINK_NAME} 
 		</a> 
