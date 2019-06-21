@@ -120,7 +120,7 @@ $COMMENT_TEMPLATE['item'] = '{SETIMAGE: w=90&h=90&crop=1}
 	{COMMENT}
 	</div>
 	{COMMENT_STATUS}{COMMENT_RATE} {REPLY} {COMMENTEDIT} {COMMENT_MODERATE}
- 
+ </div>
 </div>
 	';
 	
