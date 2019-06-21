@@ -24,7 +24,6 @@
 		e107::js("footer-inline", $inlinejs);
 	}
 
-//	define('BODYTAG', '<body id="page-top" class="layout-' . THEME_LAYOUT . '" />');
 	e107::js("theme", 'custom.js', 'jquery');
 
 
@@ -53,7 +52,8 @@
 			$style = varset($options['setStyle'], 'default');
 			
 			//this should be displayed only in e_debug mode
-      echo "\n<!-- tablestyle initial:  style=" . $style . "  mode=" . $mode . "  UniqueId=" . varset($options['uniqueId']) . " -->\n\n";
+			
+            echo "\n<!-- tablestyle initial:  style=" . $style . "  mode=" . $mode . "  UniqueId=" . varset($options['uniqueId']) . " -->\n\n";
 
 
 			if($mode == 'wmessage' OR $mode == 'wm')
