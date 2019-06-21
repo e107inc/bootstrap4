@@ -29,7 +29,7 @@ $NEWS_MENU_TEMPLATE['category']['item']        = '
 $NEWS_MENU_TEMPLATE['months']['start']       = '<ul class="nav flex-column news-menu-months">';
 $NEWS_MENU_TEMPLATE['months']['end']         = '</ul>';
 $NEWS_MENU_TEMPLATE['months']['item']        = '
-	<li class="nav-item"><a class="nav-link e-menu-link newsmonths{active}" href="{url}">{month} <span class="badge badge-primary">{count}</span></a></li>
+	<li class="nav-item"><a class="nav-link e-menu-link newsmonths{active}" href="{url}">{month} <span class="badge badge-secondary">{count}</span></a></li>
 ';
 
 // sends value to tablestyle = $info['footer'];    
@@ -45,7 +45,7 @@ $NEWS_MENU_TEMPLATE['months']['footer']   = '<a class="btn btn-default btn-secon
 $NEWS_MENU_TEMPLATE['latest']['start']       = '<ul class="news-menu-latest list-group list-group-flush">';
 $NEWS_MENU_TEMPLATE['latest']['end']         = '</ul>'; // Example: $NEWS_MENU_TEMPLATE['latest']['end']  '<br />{currentTotal} from {total}';
 $NEWS_MENU_TEMPLATE['latest']['item']        = '<li class="list-group-item"><a class="e-menu-link newsmonths" href="{NEWSURL}">{NEWSTITLE}
- <span class="badge badge-primary">{NEWSCOMMENTCOUNT}</span></a></li>';
+ <span class="badge badge-secondary">{NEWSCOMMENTCOUNT}</span></a></li>';
 
 // TODO
 $NEWS_MENU_TEMPLATE['archive']['start']       = '<ul class="news-archive-menu list-group list-group-flush ">';
