@@ -56,9 +56,9 @@
       echo "\n<!-- tablestyle initial:  style=" . $style . "  mode=" . $mode . "  UniqueId=" . varset($options['uniqueId']) . " -->\n\n";
 
 
-			if($mode == 'wmessage')
+			if($mode == 'wmessage' OR $mode == 'wm')
 			{
-				$style = '';
+				$style = 'wmessage';
 			}
  
 			
@@ -105,7 +105,18 @@
 					  echo $text;
 				  break;
 		*/
-
+		
+				case 'wmessage':		
+		    echo '<div class="jumbotron"><div class="container text-center">';
+		        if(!empty($caption))
+		        {
+		          echo '<h1 class="display-4">'.$caption.'</h1>';
+		        }
+		       
+		    echo '<p class="lead">'.$this->remove_ptags($text).'</p>';
+		    echo '</div></div>';
+        	break;
+    
 				case 'bare':
 					echo $this->remove_ptags($text);
 					break;
