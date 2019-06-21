@@ -68,7 +68,7 @@
 			}
 
  
-			if($style === 'cardmenu' && $options['list'] == 1 )
+			if($style === 'cardmenu' && !empty($options['list']))
 			{
 				$style = 'listgroup';
 			}
