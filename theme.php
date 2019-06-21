@@ -24,7 +24,7 @@
 		e107::js("footer-inline", $inlinejs);
 	}
 
-	define('BODYTAG', '<body id="page-top" class="layout-' . THEME_LAYOUT . '" />');
+//	define('BODYTAG', '<body id="page-top" class="layout-' . THEME_LAYOUT . '" />');
 	e107::js("theme", 'custom.js', 'jquery');
 
 
