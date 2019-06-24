@@ -6,6 +6,10 @@ body {
   padding-top: 56px;
 }
 
+body.layout-home {
+  padding-top: 0px;
+}
+
 .s-message.fade {
 opacity: 1 !important;
 visibility: inherit;
@@ -23,6 +27,20 @@ visibility: inherit;
   background-color: #272B30;
   color: white;
 }
+
+#e107fullpagecarousel .carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #272B30;
+  color: white;
+}
+
+
 
 
 ul.social-buttons li a {

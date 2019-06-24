@@ -15,13 +15,11 @@ $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_carousel']['list_start'] = '
 <div id="e107bootstrapcarousel" class="carousel slide" data-ride="carousel">
 {FEATUREBOX_NAVIGATION|bootstrap_carousel=loop&uselimit=1}
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    
+  <div class="carousel-inner" role="listbox">  
 ';
 
 $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_carousel']['list_end'] = '
 	  </div>
-
 	<!-- Controls -->
   <a class="carousel-control-prev" href="#e107bootstrapcarousel" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -31,10 +29,7 @@ $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_carousel']['list_end'] = '
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		<span class="sr-only">'.LAN_NEXT.'</span>
   </a>
-                    
-
 	</div><!-- end row -->
-
 <!-- end carousel -->
 ';
 
@@ -65,8 +60,29 @@ $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_carousel']['css_inline'] = '
 ';
 
 
-
-
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap3_carousel'] =  $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_carousel'];
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap3_carousel']['list_start'] = '
+<div id="e107fullpagecarousel" class="carousel slide" data-ride="carousel">
+{FEATUREBOX_NAVIGATION|bootstrap3_carousel=loop&uselimit=1}
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">  
+';
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap3_carousel']['nav_item'] = '<li data-target="#e107fullpagecarousel" data-slide-to="{FEATUREBOX_COUNTER=0}" class="{FEATUREBOX_ACTIVE}"></li>';
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap3_carousel']['list_end'] = '
+	  </div>
+	<!-- Controls -->
+  <a class="carousel-control-prev" href="#e107fullpagecarousel" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">'.LAN_PREVIOUS.'</span>
+  </a>
+	<a class="carousel-control-next" href="#e107fullpagecarousel" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">'.LAN_NEXT.'</span>
+  </a>
+	</div><!-- end row -->
+<!-- end carousel -->
+';
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap3_carousel']['nav_item'] = '<li data-target="#e107fullpagecarousel" data-slide-to="{FEATUREBOX_COUNTER=0}" class="{FEATUREBOX_ACTIVE}"></li>';
  
 /**
  * Template information.
@@ -78,8 +94,8 @@ $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_carousel']['css_inline'] = '
  * @var array
  */
 $FEATUREBOX_CATEGORY_INFO = array(
-	'bootstrap_carousel' 	=> array('title' => 'Bootstrap Carousel', 		'description' => "Bootstrap's Hero slider"),   
-	'bootstrap3_carousel' 	=> array('title' => '---', 		'description' => "Bootstrap's Hero slider"),
+	'bootstrap_carousel' 	=> array('title' => 'Bootstrap Carousel 3/4 Height', 		'description' => "Bootstrap's Hero slider"),   
+	'bootstrap3_carousel' 	=> array('title' => 'Bootstrap Carousel Full Page', 		'description' => "Bootstrap's Full Page slider"),
 	'bootstrap_tabs'		=> array('title' => '---'	,	 	'description' => 'Tabbed Feature box items'),
 //	'camera' 				=> array('title' => 'Image-Slider (jquery)'	, 	'description' => 'Image transitions using the "Camera" jquery plugin'),
   'accordion' 			=> array('title' => '---'	, 	'description' => 'Accordion utilizing jQuery UI'),
