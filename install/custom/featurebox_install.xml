@@ -13,7 +13,7 @@
 			<field name="fb_order">4</field>
 			<field name="fb_image">{e_THEME}bootstrap4/install/600x450.png</field>
 			<field name="fb_imageurl"></field>
-			<field name="fb_category">2</field>
+			<field name="fb_category">1</field>
 		</item>
 		<item>
 			<field name="fb_id">5</field>
@@ -26,7 +26,7 @@
 			<field name="fb_order">4</field>
 			<field name="fb_image">{e_THEME}bootstrap4/install/600x450.png</field>
 			<field name="fb_imageurl"></field>
-			<field name="fb_category">2</field>
+			<field name="fb_category">1</field>
 		</item>
 		<item>
 			<field name="fb_id">1</field>
@@ -39,7 +39,7 @@
 			<field name="fb_order">3</field>
 			<field name="fb_image">{e_THEME}bootstrap4/install/1900x1080.png</field>
 			<field name="fb_imageurl"></field>
-			<field name="fb_category">2</field>
+			<field name="fb_category">1</field>
 		</item>
 		<item>
 			<field name="fb_id">2</field>
@@ -52,7 +52,7 @@
 			<field name="fb_order">4</field>
 			<field name="fb_image">{e_THEME}bootstrap4/install/1900x1080.png</field>
 			<field name="fb_imageurl"></field>
-			<field name="fb_category">2</field>
+			<field name="fb_category">1</field>
 		</item>
 		<item>
 			<field name="fb_id">3</field>
@@ -65,7 +65,7 @@
 			<field name="fb_order">4</field>
 			<field name="fb_image">{e_THEME}bootstrap4/install/1900x1080.png</field>
 			<field name="fb_imageurl"></field>
-			<field name="fb_category">2</field>
+			<field name="fb_category">1</field>
 		</item>
 	</dbTable>
 	</database>
