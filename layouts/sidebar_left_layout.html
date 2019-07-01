@@ -1,23 +1,34 @@
-   
-{SETSTYLE=default}
-<!-- Page Content -->
-<section class="py-5 bg-image-full" style="background-image: url(https://unsplash.it/1900/1080?image=1081);">
-<div class="container" style="height: 250px;">
-	<h2 class="text-center">{---CAPTION---}</h2> <!-- eg. news table-render caption -->
-	   <div class='text-center'><p>{---TEXT---}</p></div> <!-- eg. news summary -->
-	   {---BREADCRUMB---}
-</div>
-</section>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3">
+
+<!-- Magic Shortcodes - proof of concept -->
+<!-- Enabled Debug in 'basic' mode to view all available types -->
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">{---CAPTION---}
+      <small>{---TEXT---}</small>
+    </h1>
+
+    {---BREADCRUMB---}
+
+    <div class="row">
+
+		  <div class="col-md-3 mb-3 sidebar">
+			<div class="menu"> 
 				{SETSTYLE=cardmenu}
-				{MENU=1}
+				{MENU=1} 
+			</div>
 		</div>
-    <!-- /.col-lg-3 -->
-    <div class="col-lg-9">
-			{SETSTYLE=default}
-			{---}  
-		</div>
-	</div>
-</div> 
+
+    <div class="col-md-9">
+		{ALERTS}
+		{SETSTYLE=main}
+		{---}
+    </div>		
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
