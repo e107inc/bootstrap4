@@ -6,7 +6,7 @@
 	 * Released under the terms and conditions of the
 	 * GNU General Public License (http://www.gnu.org/licenses/gpl.txt)
 	 *
-	 */
+	 */     
 
 	$VSTORE_MENU_TEMPLATE = array();
 
@@ -20,7 +20,7 @@
     ';
 
 	$VSTORE_MENU_TEMPLATE['categories']['item'] = '
-    <li class="list-group-item"><a href="{MENU_CAT:url}" class="vstore-categories-item {MENU_CAT:active}">
+    <li class="list-group-item {MENU_CAT:active}"><a href="{MENU_CAT:url}" class="vstore-categories-item {MENU_CAT:active}">
         {MENU_CAT:name}</a></li>
   
     
