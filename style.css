@@ -69,3 +69,11 @@ ul.social-buttons li a {
         margin-left: 8.33333%;
     }
 }
+
+
+.list-group-item.active a {
+    z-index: 2;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
