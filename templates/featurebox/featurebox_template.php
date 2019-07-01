@@ -169,6 +169,6 @@ $FEATUREBOX_INFO = array(
 	// 'camera'						=> array('title' => 'Camera item',							'description' => 'For use with the "camera" category'),
 	// 'camera_caption' 				=> array('title' => 'Camera item with caption',				'description' => 'For use with the "camera" category'),
 	'accordion' 					=> array('title' => '---',						'description' => 'For use with accordion'),
-	'tabs' 							=> array('title' => '---',								'description' => 'For use with tabs')
+	'tabs' 							=> array('title' => 'Tab Item',								'description' => 'For use with tabs')
 );
 ?>

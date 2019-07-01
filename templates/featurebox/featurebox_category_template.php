@@ -89,7 +89,7 @@ $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_carousel']['nav_item'] = '<li data-targ
 
 
 $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['list_start'] = '
-<div class="box featurebox tab-content">
+<div class="box featurebox tab-content py-3 px-3 px-sm-0">
 	{FEATUREBOX_NAVIGATION|bootstrap_tabs=loop&uselimit}	
 ';
 
@@ -99,7 +99,7 @@ $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['list_end'] = '
 
 ';
 // no column support
-$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['col_start'] = '<div id="tab-{FEATUREBOX_COLSCOUNT}" class="tab-pane {FEATUREBOX_ACTIVE}">';
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['col_start'] = '<div id="tab-{FEATUREBOX_COLSCOUNT}" class="tab-pane fade show  {FEATUREBOX_ACTIVE}">';
 $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['col_end'] = '</div>';
 
 // ajax navigation (unobtrusive)
@@ -110,9 +110,10 @@ $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['item_separator'] = '<div class=
 // empty item  - used with col templates, no shortcodes just basic markup
 $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['item_empty'] = '';
 
-$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['nav_start'] = '<ul class="nav nav-tabs">';
-$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['nav_item'] = '<li class="{FEATUREBOX_ACTIVE}"><a data-toggle="tab" href="#tab-{FEATUREBOX_COLSCOUNT}">{FEATUREBOX_TITLE}</a></li>';
-$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['nav_end'] = '</ul>';
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['nav_start'] = '<nav><ul class="nav nav-tabs">';
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['nav_item'] = '<li class="nav-item ">
+<a data-toggle="tab" class="nav-link {FEATUREBOX_ACTIVE}"  href="#tab-{FEATUREBOX_COLSCOUNT}">{FEATUREBOX_TITLE}</a></li>';
+$FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['nav_end'] = '</ul></nav>';
 $FEATUREBOX_CATEGORY_TEMPLATE['bootstrap_tabs']['nav_separator'] = '';
 //<div class="e-bootstrap_tabs">
 // external JS, comma separated list
