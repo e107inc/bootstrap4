@@ -185,7 +185,7 @@
 			<field name="post_forum">3</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481489914</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:4395:2c20</field>
@@ -200,7 +200,7 @@
 			<field name="post_forum">6</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481490078</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:4395:2c20</field>
@@ -263,7 +263,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">6</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481906984</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -278,7 +278,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">6</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481907009</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">1487188822</field>
 			<field name="post_edit_user">1</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -293,7 +293,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">4</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481907304</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -323,7 +323,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">4</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481913490</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -338,7 +338,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">4</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481913502</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -353,7 +353,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">4</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481913522</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -368,7 +368,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">4</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481913610</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -446,7 +446,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">3</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481927411</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
@@ -461,7 +461,7 @@ Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie.
 			<field name="post_forum">3</field>
 			<field name="post_status">0</field>
 			<field name="post_datestamp">1481927433</field>
-			<field name="post_user">2</field>
+			<field name="post_user">0</field>
 			<field name="post_edit_datestamp">0</field>
 			<field name="post_edit_user">0</field>
 			<field name="post_ip">0000:0000:0000:0000:0000:ffff:d8ea:67e2</field>
