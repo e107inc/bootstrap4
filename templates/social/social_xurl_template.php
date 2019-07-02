@@ -23,5 +23,5 @@
 	 
 	 $SOCIAL_XURL_TEMPLATE['footer']['start'] = '<div class="d-flex justify-content-center"><ul class="list-inline social-buttons">';
 	 $SOCIAL_XURL_TEMPLATE['footer']['item'] = ' 
- <a class="btn btn-primary"  title="{XURL_ICONS_TITLE}"><i class="fab fa-{XURL_ICONS_ID}"></i></a> ';
+ <a class="btn btn-primary m-1"  title="{XURL_ICONS_TITLE}"><i class="fab fa-{XURL_ICONS_ID}"></i></a> ';
 	 $SOCIAL_XURL_TEMPLATE['footer']['end'] = '</ul></div>';
