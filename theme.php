@@ -10,8 +10,12 @@
 	e107::meta('viewport', 'width=device-width, initial-scale=1.0');
 //e107::meta('apple-mobile-web-app-capable','yes');
 
-	e107::css("url", "https://bootswatch.com/4/slate/bootstrap.min.css");
-
+ 
+	$bootswatch = e107::pref('theme', 'bootswatch', false);
+	if($bootswatch) {
+		e107::css('url', 'https://bootswatch.com/4/' . $bootswatch . '/bootstrap.min.css');
+		e107::css('url', 'https://bootswatch.com/4/' . $bootswatch . '/bootstrap.min.css');
+  }
 
 	$inlinecss = e107::pref('theme', 'inlinecss', false);
 	if($inlinecss)

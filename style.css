@@ -24,8 +24,6 @@ visibility: inherit;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #272B30;
-  color: white;
 }
 
 #e107fullpagecarousel .carousel-item {
