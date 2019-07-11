@@ -33,16 +33,16 @@
 		</layout>
 		<layout name='sidebar_left' title='Sidebar (left)' />
 		<layout name='sidebar_right' title='Sidebar (right)' default='true' />
-		<layout name='singlelogin' title='Login Screen with Floating Labels' >
+		<layout name='singlelogin' title='Login Screen' >
 			<custompages>login fpw</custompages>
 		</layout>
-			<layout name='singlesignup' title='Sign in page with a split screen format' >
+			<layout name='singlesignup' title='Register Page' >
 			<custompages>signup</custompages>
 		</layout>
 		<layout name='singlecontact' title='Contact page' >
 			<custompages>contact</custompages>
 		</layout>
-		<layout name='bare' title='Starter Bare template for development' >
+		<layout name='bare' title='Starter Bare template' >
 			<custompages>guide</custompages>
 		</layout>
 	</layouts>
