@@ -51,5 +51,6 @@
 		<pref name='cardmenu_look'>1</pref>
 		<pref name='inlinecss'></pref>
 		<pref name='inlinejs'></pref>
+		<pref name='login_iframe'></pref>
 	</themePrefs>
 </e107Theme>

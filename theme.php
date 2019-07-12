@@ -1,34 +1,39 @@
 <?php
 
-	if(!defined('e107_INIT'))
-	{
-		exit();
-	}
+if(!defined('e107_INIT'))
+{
+	exit();
+}
 
-// e107::lan('theme');
+e107::lan('theme');
 
-	e107::meta('viewport', 'width=device-width, initial-scale=1.0');
+e107::meta('viewport', 'width=device-width, initial-scale=1.0');
 //e107::meta('apple-mobile-web-app-capable','yes');
 
- 
-	$bootswatch = e107::pref('theme', 'bootswatch', false);
-	if($bootswatch) {
-		e107::css('url', 'https://bootswatch.com/4/' . $bootswatch . '/bootstrap.min.css');
-		e107::css('url', 'https://bootswatch.com/4/' . $bootswatch . '/bootstrap.min.css');
-  }
 
-	$inlinecss = e107::pref('theme', 'inlinecss', false);
-	if($inlinecss)
-	{
-		e107::css("inline", $inlinecss);
-	}
-	$inlinejs = e107::pref('theme', 'inlinejs');
-	if($inlinejs)
-	{
-		e107::js("footer-inline", $inlinejs);
-	}
+$bootswatch = e107::pref('theme', 'bootswatch', false);
+if($bootswatch) {
+	e107::css('url', 'https://bootswatch.com/4/' . $bootswatch . '/bootstrap.min.css');
+	e107::css('url', 'https://bootswatch.com/4/' . $bootswatch . '/bootstrap.min.css');
+}
 
-	e107::js("theme", 'custom.js', 'jquery');
+$inlinecss = e107::pref('theme', 'inlinecss', false);
+if($inlinecss)
+{
+	e107::css("inline", $inlinecss);
+}
+$inlinejs = e107::pref('theme', 'inlinejs');
+if($inlinejs)
+{
+	e107::js("footer-inline", $inlinejs);
+}
+
+e107::js("theme", 'custom.js', 'jquery');
+
+$login_iframe  = e107::pref('theme', 'login_iframe', false);
+if(THEME_LAYOUT == "singlelogin" && $login_iframe )  {
+  define('e_IFRAME','0');  
+}
 
 
 	class bootstrap4_theme
@@ -75,6 +80,12 @@
 			if($style === 'cardmenu' && !empty($options['list']))
 			{
 				$style = 'listgroup';
+			}
+    
+      // in iframe SETSTYLE is ignored
+			if($mode === 'login_page'  )
+			{                  
+				$style = 'singlelogin';
 			}
 			
 			/* Changing card look via prefs */
@@ -174,6 +185,23 @@
 
 					echo '</div>';
 					break;
+          
+         case 'singlelogin': {
+            echo '<div class="card card-signin my-5"><div class="card-body">';
+  					if(!empty($caption))
+  					{
+  						echo '<h5 class="card-title text-center">' . $caption . '</h5>';
+  					}
+  					echo $text;    
+  					if(!empty($options['footer'])) // XXX @see news-months menu.
+  			        {
+  			            echo '<div class="card-footer">
+  		                      '.$options['footer'].'
+  		                    </div>';
+  			        }
+  					echo '</div></div>';
+  					break;                
+         }
 
 			   default:
 

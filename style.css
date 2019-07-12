@@ -75,3 +75,13 @@ ul.social-buttons li a {
     background-color: #007bff;
     border-color: #007bff;
 }
+
+/* fix for caret bootstrap user nav */
+.profile-photo-small {
+  display: inline;
+}
+
+/* fix for fixed-top on login page - to save custom header */
+.layout-singlelogin .fixed-top {
+  position: initial;
+}
