@@ -5,7 +5,7 @@ if (!defined('e107_INIT')) { exit; }
  
 // Starter for v2. - Bootstrap 
 $LOGIN_TEMPLATE['page']['header'] = '
-  <div class="container  justify-content-center text-center">
+  <div class="container  justify-content-center text-center my-5">
     <div class="row  align-items-center">';
 
 $LOGIN_TEMPLATE['page']['body'] = '
@@ -17,7 +17,7 @@ $LOGIN_TEMPLATE['page']['body'] = '
 		$LOGIN_TEMPLATE['page']['body'] .= "
     	<div style='text-align: center' id='nologinmenuchap'>"."Javascript must be enabled in your browser if you wish to log into this site"."
 		</div>
-    	<span style='display:none' id='loginmenuchap'>";
+    	<span style='display:none; visibility: none; ' id='loginmenuchap'>";
 	}
 	else
 	{

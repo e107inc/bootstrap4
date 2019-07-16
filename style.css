@@ -1,7 +1,3 @@
-
-
-/* CUSTOM Responsive Styles */
-
 body {
   padding-top: 56px;
 }
@@ -10,12 +6,17 @@ body.layout-home {
   padding-top: 0px;
 }
 
+body.layout-singlelogin {
+  padding-top: 0px;
+}
+
+/* fix for message box */
 .s-message.fade {
 opacity: 1 !important;
 visibility: inherit;
 } 
 
-
+/* featurebox defaults */
 #e107bootstrapcarousel .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -37,8 +38,6 @@ visibility: inherit;
   background-color: #272B30;
   color: white;
 }
-
-
 
 
 ul.social-buttons li a {
@@ -85,3 +84,25 @@ ul.social-buttons li a {
 .layout-singlelogin .fixed-top {
   position: initial;
 }
+
+/* fix for too small core login box width */
+
+#login-template {
+    max-width: 95%;
+}
+
+@media (min-width: 768px) { 
+  #login-template {
+      max-width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+}
+
+/* fix for too big margin */
+#login-template .login-page-footer {
+    margin-bottom: initial;  
+}
+
+
+/* CUSTOM Responsive Styles */
