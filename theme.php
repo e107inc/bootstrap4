@@ -34,7 +34,9 @@ $login_iframe  = e107::pref('theme', 'login_iframe', false);
 if(THEME_LAYOUT == "singlelogin" && $login_iframe )  {
   define('e_IFRAME','0');  
 }
-
+if(THEME_LAYOUT == "singlesignup" && $login_iframe )  {
+  define('e_IFRAME','0');  
+}
 
 	class bootstrap4_theme
 	{
@@ -87,7 +89,20 @@ if(THEME_LAYOUT == "singlelogin" && $login_iframe )  {
 			{                  
 				$style = 'singlelogin';
 			}
-			
+			if($mode === 'fpw'  )
+			{                  
+				$style = 'singlelogin';
+			}
+			if($mode === 'coppa'  )
+			{                  
+				$style = 'singlelogin';
+			}
+			if($mode === 'signup'  )
+			{                  
+				$style = 'singlelogin';
+			}      
+      
+            			
 			/* Changing card look via prefs */
 			if(!e107::pref('theme', 'cardmenu_look') && $style == 'cardmenu')
 			{
@@ -186,7 +201,10 @@ if(THEME_LAYOUT == "singlelogin" && $login_iframe )  {
 					echo '</div>';
 					break;
           
-         case 'singlelogin': {
+         case 'singlelogin': {   
+         echo '<div class="container  justify-content-center text-center my-5" id="fpw-page">
+                 <div class="row  align-items-center">';
+          
             echo '<div class="card card-signin col-md-6 offset-md-3 " id="login-template"><div class="card-body">';
   					if(!empty($caption))
   					{
@@ -200,6 +218,7 @@ if(THEME_LAYOUT == "singlelogin" && $login_iframe )  {
   		                    </div>';
   			        }
   					echo '</div></div>';
+            echo '</div></div>';
   					break;                
          }
 

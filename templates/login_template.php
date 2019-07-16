@@ -4,9 +4,7 @@
 if (!defined('e107_INIT')) { exit; }
  
 // Starter for v2. - Bootstrap 
-$LOGIN_TEMPLATE['page']['header'] = '
-  <div class="container  justify-content-center text-center my-5">
-    <div class="row  align-items-center">';
+$LOGIN_TEMPLATE['page']['header'] = '';
 
 $LOGIN_TEMPLATE['page']['body'] = '
     {LOGO: login}
@@ -47,7 +45,7 @@ $LOGIN_TEMPLATE['page']['body'] .= '
   <label class="custom-control-label" for="autologin-1">'.LAN_LOGIN_8.'</label>
 </div>
 
-        {LOGIN_TABLE_SUBMIT=large}
+        {LOGIN_TABLE_SUBMIT}
 
        	<div class="login-page-footer">
   				<div class="login-page-signup-link"><p>{LOGIN_TABLE_SIGNUP_LINK}</p></div>
@@ -57,8 +55,7 @@ $LOGIN_TEMPLATE['page']['body'] .= '
   
  ';
 
-$LOGIN_TEMPLATE['page']['footer'] =  "</div></div>
-";
+$LOGIN_TEMPLATE['page']['footer'] =  "";
 	
 
 
