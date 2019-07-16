@@ -187,7 +187,7 @@ if(THEME_LAYOUT == "singlelogin" && $login_iframe )  {
 					break;
           
          case 'singlelogin': {
-            echo '<div class="card card-signin my-5"><div class="card-body">';
+            echo '<div class="card card-signin col-md-4 offset-md-4 "><div class="card-body">';
   					if(!empty($caption))
   					{
   						echo '<h5 class="card-title text-center">' . $caption . '</h5>';

@@ -5,8 +5,8 @@ if (!defined('e107_INIT')) { exit; }
  
 // Starter for v2. - Bootstrap 
 $LOGIN_TEMPLATE['page']['header'] = '
-  <div class="container d-flex flex-row justify-content-center text-center">
-    <div class="row">';
+  <div class="container  justify-content-center text-center">
+    <div class="row  align-items-center">';
 
 $LOGIN_TEMPLATE['page']['body'] = '
     {LOGO: login}
