@@ -6,6 +6,7 @@ $sitetheme = e107::getPref('sitetheme');
 
 e107::themeLan('admin', $sitetheme, true);
 
+// FIXME Move all of this into class below.
 if(isset($_POST['importThemeDemo']))
 {
 	$xmlArray = array();
@@ -61,7 +62,7 @@ class theme_config implements e_theme_config
 		
 		$previewLink = " <a class='btn btn-default btn-secondary e-modal' data-modal-caption=\"Use the 'Themes' menu to view the selection.\" href='http://bootswatch.com/default/'>".LAN_PREVIEW."</a>";
 
-		$fields = array(
+		return array(
 			'bootswatch'        => array('title'=>LAN_THEMEPREF_03, 'type'=>'dropdown', 'writeParms'=>array('optArray'=> $bootswatch, 'post'=>$previewLink, 'default'=>LAN_DEFAULT)),
 			'cardmenu_look' => array('title' => LAN_THEMEPREF_04, 'type'=>'boolean', 'writeParms'=>array(),'help'=>''),			
 			'login_iframe' => array('title' => LAN_THEMEPREF_06, 'type'=>'boolean', 'writeParms'=>array(),'help'=>''), 	
@@ -69,7 +70,7 @@ class theme_config implements e_theme_config
 			'inlinecss'  	=> array('title' => LAN_THEMEPREF_01, 'type'=>'textarea', 'writeParms'=>array('size'=>'block-level'),'help'=>''),
 			'inlinejs'  	=> array('title' => LAN_THEMEPREF_02, 'type'=>'textarea', 'writeParms'=>array('size'=>'block-level'),'help'=>''),	
 		);
-		return $fields;
+
 	}
 
 	function help()
