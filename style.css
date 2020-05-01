@@ -10,11 +10,7 @@ body.layout-singlelogin {
   padding-top: 0px;
 }
 
-/* fix for message box */
-.s-message.fade {
-opacity: 1 !important;
-visibility: inherit;
-} 
+
 
 /* featurebox defaults */
 #e107bootstrapcarousel .carousel-item {
