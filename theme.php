@@ -12,9 +12,12 @@ if(!defined('e107_INIT'))
 
         function __construct()
         {
+
             e107::lan('theme');
 
-            e107::meta('viewport', 'width=device-width, initial-scale=1.0');
+            e107::meta('viewport', 'width=device-width, initial-scale=1.0'); // added to <head>
+            e107::link('rel="preload" href="{THEME}fonts/myfont.woff2?v=2.2.0" as="font" type="font/woff2" crossorigin');  // added to <head>
+
             //e107::meta('apple-mobile-web-app-capable','yes');
 
 
