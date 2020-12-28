@@ -131,7 +131,7 @@ $CONTACT_TEMPLATE['menu'] =  '
   
   $CONTACT_TEMPLATE['layout']  =  
   '<div class="container"> 
-    <h1 class="mt-4 mb-3">'.PAGE_NAME.'</h1> 
+    <h1 class="mt-4 mb-3">'.LANCONTACT_00.'</h1> 
     <!-- Content Row -->
      <div class="row">
        <!-- Map Column -->
@@ -162,4 +162,4 @@ $CONTACT_TEMPLATE['menu'] =  '
 	$CONTACT_TEMPLATE['form'] = $CONTACT_TEMPLATE['layout'];	
 	
 
-?>
+
