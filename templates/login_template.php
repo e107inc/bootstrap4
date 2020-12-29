@@ -26,7 +26,7 @@ $LOGIN_WRAPPER['page']['LOGIN_TABLE_USERNAME'] = "<div class='form-group'>{---}<
 $LOGIN_WRAPPER['page']['LOGIN_TABLE_PASSWORD'] = "<div class='form-group'>{---}</div>";
 $LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_SECIMG'] = "<div class='form-group'>{---}</div>";
 $LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_TEXTBOC'] = "<div class='form-group'>{---}</div>";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_REMEMBERME'] = '<div class="custom-control custom-checkbox">{---}</div>';
+$LOGIN_WRAPPER['page']['LOGIN_TABLE_REMEMBERME'] = "<div class='form-group'>{---}</div>"; 
 $LOGIN_WRAPPER['page']['LOGIN_TABLE_SUBMIT'] = "<div class='form-group'>{---}</div>";
 $LOGIN_WRAPPER['page']['LOGIN_TABLE_FOOTER_USERREG'] = "<div class='form-group'>{---}</div>";
 $LOGIN_WRAPPER['page']['LOGIN_TABLE_LOGINMESSAGE'] = "<div class='alert alert-danger'>{---}</div>";
@@ -39,12 +39,7 @@ $LOGIN_TEMPLATE['page']['body'] .= '
         {LOGIN_TABLE_PASSWORD}
         {SOCIAL_LOGIN: size=3x}
 		{LOGIN_TABLE_SECIMG_SECIMG} {LOGIN_TABLE_SECIMG_TEXTBOC}
-        
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="autologin-1">
-  <label class="custom-control-label" for="autologin-1">'.LAN_LOGIN_8.'</label>
-</div>
-
+        {LOGIN_TABLE_REMEMBERME}
         {LOGIN_TABLE_SUBMIT}
 
        	<div class="login-page-footer">
