@@ -103,7 +103,7 @@ $NEWS_WRAPPER['default']['item']['NEWSIMAGE: item=1&type=src'] = '<img class="ca
         */
         
 
-$NEWS_TEMPLATE['default']['caption'] = PAGE_NAME;
+$NEWS_TEMPLATE['default']['caption'] = '{LAN=PAGE_NAME}';
 $NEWS_TEMPLATE['default']['start']	= '{SETIMAGE: w=750&h=300&crop=1}';
 $NEWS_TEMPLATE['default']['item'] = '		
         <div class="card mb-4">
