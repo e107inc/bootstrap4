@@ -101,16 +101,9 @@ $CONTACT_TEMPLATE['menu'] =  '
 
 	{CONTACT_IMAGECODE}
 	{CONTACT_IMAGECODE_INPUT}
-
-	<div class='form-group'><label for='gdpr'>".LANCONTACT_24."</label>
-		<div class='checkbox form-check'>
-			<label>{CONTACT_GDPR_CHECK} ".LANCONTACT_21."</label>
-			<div class='help-block'>{CONTACT_GDPR_LINK}</div> 
-		</div>
-	</div>
-	
-	
-
+    {CONTACT_GDPR_CHECK: label=".LANCONTACT_21."}
+    <small>{CONTACT_GDPR_LINK}<small>
+ 
 	<div class='form-group'>
 	{CONTACT_SUBMIT_BUTTON}
 	</div>
