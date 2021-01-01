@@ -75,7 +75,7 @@ $NEWS_MENU_TEMPLATE['other']['caption'] 	= TD_MENU_L1;
 $NEWS_MENU_TEMPLATE['other']['start']		= "<div id='otherNews' data-interval='false' class='carousel slide othernews-block'>
 												<div class='carousel-inner'>
 												{SETIMAGE: w=400&h=200&crop=1}"; // set the {NEWSIMAGE} dimensions. 								
-$NEWS_MENU_TEMPLATE['other']['item']		= '<div class="item {ACTIVE}">
+$NEWS_MENU_TEMPLATE['other']['item']		= '<div class="carousel-item item {ACTIVE}">
 												{NEWSTHUMBNAIL=placeholder}
               									<h3>{NEWSTITLE}</h3>
               									<p>{NEWSSUMMARY}</p>
@@ -136,7 +136,7 @@ $NEWS_MENU_TEMPLATE['carousel']['end'] = '
 
 
 $NEWS_MENU_TEMPLATE['carousel']['item'] = '<!-- Start Item -->
-											<div class="item {ACTIVE}">{SETIMAGE: w=800&h=370&crop=1}
+											<div class="carousel-item item {ACTIVE}">{SETIMAGE: w=800&h=370&crop=1}
 									          {NEWS_IMAGE: class=img-responsive img-fluid}
 									           <div class="carousel-caption">
 									            <small>{NEWS_DATE=dd MM, yyyy}</small>

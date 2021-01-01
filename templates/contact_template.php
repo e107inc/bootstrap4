@@ -52,7 +52,7 @@ $CONTACT_TEMPLATE['menu'] =  '
 		</div></div>
 		<div class="control-group form-group"><div class="controls"> 
 		 {CONTACT_GDPR_CHECK: label='.LANCONTACT_21.'}
-          <small>{CONTACT_GDPR_LINK}<small>
+          <small>{CONTACT_GDPR_LINK}</small>
 		</div></div>
 		{CONTACT_SUBMIT_BUTTON}
 	</div>       
@@ -100,7 +100,7 @@ $CONTACT_TEMPLATE['menu'] =  '
 	{CONTACT_IMAGECODE}
 	{CONTACT_IMAGECODE_INPUT}
     {CONTACT_GDPR_CHECK: label=".LANCONTACT_21."}
-    <small>{CONTACT_GDPR_LINK}<small>
+    <small>{CONTACT_GDPR_LINK}</small>
  
 	<div class='form-group'>
 	{CONTACT_SUBMIT_BUTTON}
